@@ -1,0 +1,11 @@
+id,name,location,price,monthly_rent,market_risk,property_risk,financial_risk
+1,Ocean View Apartment,Beach Road,7500000,25000,30,30,40
+2,City Center Flat,Dwaraka Nagar,6000000,20000,45,25,30
+3,Green Valley Villa,Madhurawada,9000000,30000,20,40,40
+4,Suburban Home,Gajuwaka,5500000,18000,50,35,15
+5,Modern Duplex,Seethammadhara,8200000,28000,25,30,45
+6,Compact Studio,Siripuram,4000000,15000,60,15,25
+7,Spacious 3BHK,MVP Colony,8800000,29000,35,45,20
+8,Hilltop House,Kailasagiri,9500000,32000,15,55,30
+9,Quiet Lane Bungalow,Pedda Waltair,8500000,27000,28,32,40
+10,NRI Layout Plot,Anandapuram,5000000,10000,40,20,40
