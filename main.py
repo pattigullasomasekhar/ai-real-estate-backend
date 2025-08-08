@@ -5,12 +5,8 @@ import pandas as pd
 # Create the FastAPI app instance
 app = FastAPI()
 
-# Setup CORS middleware
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://localhost:5173",
-]
+# UPDATED: Allow all origins to connect
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -27,7 +23,6 @@ def get_properties():
     df = pd.read_csv("properties.csv")
 
     # 2. Calculate our simple "AI" score
-    # We define profitability as the annual rent divided by the price.
     df["profitability_score"] = (df["monthly_rent"] * 12) / df["price"]
 
     # 3. Sort the properties by our score (best deals first)
@@ -38,7 +33,6 @@ def get_properties():
 
     return properties_list
 
-# You can keep the root endpoint for testing if you like
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
